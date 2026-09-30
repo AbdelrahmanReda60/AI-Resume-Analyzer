@@ -1,0 +1,51 @@
+{
+  "category": "resume_tip",
+  "description": "Curated resume tip reference documents for the AI Resume Analyzer knowledge base.",
+  "documents": [
+    {
+      "title": "Quantifying Work Experience Achievements",
+      "category": "resume_tip",
+      "content": "Always quantify achievements with metrics (e.g. 'Improved database query response time by 45% using indexed views').",
+      "tags": [
+        "resume tip",
+        "formatting"
+      ]
+    },
+    {
+      "title": "Action Verb Checklist for Tech Resumes",
+      "category": "resume_tip",
+      "content": "Use strong action verbs like 'Architected', 'Implemented', 'Optimized', 'Automated', 'Spearheaded', and 'Refactored' at the start of bullet points.",
+      "tags": [
+        "resume tip",
+        "action verbs"
+      ]
+    },
+    {
+      "title": "Optimizing Resumes for ATS Scanners",
+      "category": "resume_tip",
+      "content": "Avoid complex table layouts or graphic elements. Ensure core technical skills appear in a dedicated Technical Skills section.",
+      "tags": [
+        "resume tip",
+        "ats"
+      ]
+    },
+    {
+      "title": "Crafting a Powerful Executive Summary",
+      "category": "resume_tip",
+      "content": "Limit your resume summary to 2-3 concise sentences detailing your career focus, total years of experience, and primary tech stack.",
+      "tags": [
+        "resume tip",
+        "summary"
+      ]
+    },
+    {
+      "title": "High-Impact Project Section Format",
+      "category": "resume_tip",
+      "content": "Format portfolio projects with a short title, target goal, tech stack used, and live demo / GitHub link.",
+      "tags": [
+        "resume tip",
+        "projects"
+      ]
+    }
+  ]
+}

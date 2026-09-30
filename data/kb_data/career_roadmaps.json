@@ -1,0 +1,54 @@
+{
+  "category": "roadmap",
+  "description": "Curated roadmap reference documents for the AI Resume Analyzer knowledge base.",
+  "documents": [
+    {
+      "title": "Backend Engineering Career Roadmap",
+      "category": "roadmap",
+      "content": "Junior Backend Dev -> Mid-Level Developer (Mastering APIs, DB design) -> Senior Backend Engineer (Microservices, Distributed Systems) -> Staff Architect.",
+      "tags": [
+        "roadmap",
+        "backend",
+        "career"
+      ]
+    },
+    {
+      "title": "Full Stack Developer Career Path",
+      "category": "roadmap",
+      "content": "Full Stack Developers transition from building frontend views to designing robust REST APIs and database schema migrations.",
+      "tags": [
+        "roadmap",
+        "fullstack"
+      ]
+    },
+    {
+      "title": "DevOps & Cloud Engineer Path",
+      "category": "roadmap",
+      "content": "Cloud Engineers specialize in CI/CD pipeline automation, infrastructure as code (Terraform), cluster management (Kubernetes), and monitoring (Prometheus).",
+      "tags": [
+        "roadmap",
+        "devops",
+        "cloud"
+      ]
+    },
+    {
+      "title": "AI / Data Science Specialist Roadmap",
+      "category": "roadmap",
+      "content": "Data Scientists transition into AI Engineers by focusing on RAG pipelines, LLM fine-tuning, vector database indexing, and model deployment APIs.",
+      "tags": [
+        "roadmap",
+        "ai",
+        "data science"
+      ]
+    },
+    {
+      "title": "Software Engineering Management Path",
+      "category": "roadmap",
+      "content": "Senior Technical Engineers can progress into Engineering Managers by managing sprint execution, hiring, team performance reviews, and technical strategy.",
+      "tags": [
+        "roadmap",
+        "management"
+      ]
+    }
+  ]
+}

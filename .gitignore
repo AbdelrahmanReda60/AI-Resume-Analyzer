@@ -1,0 +1,59 @@
+# ===== Secrets (الأهم) =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ===== Database and user data =====
+data/app.db
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+*.db
+*.sqlite
+*.sqlite3
+data/uploads/*
+!data/uploads/.gitkeep
+
+# ===== ML models / caches (ضخمة) =====
+.cache/
+models/
+*.bin
+*.safetensors
+*.onnx
+.huggingface/
+
+# ===== Logs =====
+*.log
+logs/
+
+# ===== Node (لو استخدمت أي tool) =====
+node_modules/
+
+# ===== Editors and OS =====
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ===== AI coding tools =====
+.opencode/
+.agy/
+.claude/

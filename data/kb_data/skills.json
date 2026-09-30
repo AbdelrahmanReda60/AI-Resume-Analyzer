@@ -1,0 +1,109 @@
+{
+  "category": "skill",
+  "description": "Curated skill reference documents for the AI Resume Analyzer knowledge base.",
+  "documents": [
+    {
+      "title": "Python Developer Skill Taxonomy",
+      "category": "skill",
+      "content": "Python backend development requires proficiency in FastAPI, Flask, or Django frameworks, async I/O, REST API design, Pydantic validation, and SQLAlchemy ORM.",
+      "tags": [
+        "python",
+        "fastapi",
+        "backend"
+      ]
+    },
+    {
+      "title": "Database Systems & SQL Optimization",
+      "category": "skill",
+      "content": "Relational databases like PostgreSQL and SQLite require knowledge of index design, query optimization, foreign keys, ACID transactions, and migration strategies.",
+      "tags": [
+        "database",
+        "sql",
+        "sqlite",
+        "postgresql"
+      ]
+    },
+    {
+      "title": "Containerization with Docker & Kubernetes",
+      "category": "skill",
+      "content": "Docker containerization simplifies application packaging. Kubernetes provides container orchestration, automated scaling, ingress routing, and service discovery.",
+      "tags": [
+        "docker",
+        "kubernetes",
+        "devops",
+        "cloud"
+      ]
+    },
+    {
+      "title": "Frontend Technologies (HTML, CSS, JS)",
+      "category": "skill",
+      "content": "Vanilla JavaScript, modern HTML5, and CSS3 enable building responsive user interfaces without reliance on complex single-page app frameworks.",
+      "tags": [
+        "frontend",
+        "javascript",
+        "css",
+        "html"
+      ]
+    },
+    {
+      "title": "Cloud Computing Infrastructure (AWS & GCP)",
+      "category": "skill",
+      "content": "Cloud platforms like AWS (S3, EC2, Lambda) and Google Cloud Platform enable deploying microservices, blob storage management, and serverless compute pipelines.",
+      "tags": [
+        "cloud",
+        "aws",
+        "gcp"
+      ]
+    },
+    {
+      "title": "Git & Collaborative Version Control",
+      "category": "skill",
+      "content": "Git version control requires mastery of branching strategies (Gitflow), pull requests, merge conflict resolution, and release tagging.",
+      "tags": [
+        "git",
+        "collaboration",
+        "version control"
+      ]
+    },
+    {
+      "title": "RESTful API Security & JWT Authentication",
+      "category": "skill",
+      "content": "API security includes stateless JWT token authentication, Bcrypt password hashing, CORS configuration, rate limiting, and input sanitization.",
+      "tags": [
+        "api",
+        "security",
+        "jwt",
+        "auth"
+      ]
+    },
+    {
+      "title": "Machine Learning Fundamentals with Python",
+      "category": "skill",
+      "content": "Machine learning engineering involves data preprocessing, feature engineering, model training with Scikit-Learn, PyTorch, or TensorFlow, and evaluation metrics.",
+      "tags": [
+        "machine learning",
+        "python",
+        "ai"
+      ]
+    },
+    {
+      "title": "Soft Skills: Cross-functional Leadership",
+      "category": "skill",
+      "content": "Technical leadership requires clear verbal communication, active listening, technical mentoring of junior engineers, and agile sprint planning.",
+      "tags": [
+        "soft skill",
+        "leadership",
+        "mentoring"
+      ]
+    },
+    {
+      "title": "Soft Skills: Analytical Problem Solving",
+      "category": "skill",
+      "content": "Analytical problem solving involves breaking complex system bugs into reproducible isolation tests and formulating root cause hypotheses.",
+      "tags": [
+        "soft skill",
+        "problem solving"
+      ]
+    }
+  ]
+}

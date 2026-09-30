@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Resume — AI Resume Analyzer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Global Navbar -->
+  <div id="navbar-container"></div>
+
+  <main style="max-width: 680px;">
+    <!-- Section Title -->
+    <div style="margin-bottom: 24px; text-align: center;">
+      <h1 style="font-size: 1.85rem; font-weight: 800; color: var(--neutral-900);">Upload Your Resume</h1>
+      <p style="color: var(--neutral-500); font-size: 0.95rem;">Upload a PDF or DOCX file to run AI analysis and job matching</p>
+    </div>
+
+    <!-- Step Indicator -->
+    <div class="step-indicator" id="upload-step-indicator">
+      <div class="step active" id="step-1">
+        <div class="step-num">1</div>
+        <span>Upload File</span>
+      </div>
+      <div class="step" id="step-2">
+        <div class="step-num">2</div>
+        <span>Extracting Text</span>
+      </div>
+      <div class="step" id="step-3">
+        <div class="step-num">3</div>
+        <span>AI Analyzing</span>
+      </div>
+    </div>
+
+    <!-- Upload Card -->
+    <div class="card">
+      <form id="upload-resume-form" novalidate>
+        <!-- Drag and Drop Dropzone -->
+        <div id="dropzone" tabindex="0" role="button" aria-label="Choose a resume file. Click or press Enter to browse." style="border: 2px dashed var(--neutral-300); border-radius: var(--radius-md); padding: 40px 20px; text-align: center; cursor: pointer; background: var(--neutral-50); transition: all 0.2s ease;">
+          <input type="file" id="file-input" name="file" accept=".pdf,.docx" aria-label="Resume file (PDF or DOCX)" style="display: none;">
+          <div style="font-size: 2.5rem; margin-bottom: 12px; color: var(--primary-600);">📁</div>
+          <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--neutral-800); margin-bottom: 4px;">Drag & Drop your resume here</h3>
+          <p style="font-size: 0.875rem; color: var(--neutral-500); margin-bottom: 16px;">Supports PDF and DOCX files up to 5MB</p>
+          <button type="button" class="btn btn-secondary btn-sm" onclick="document.getElementById('file-input').click()">Browse File</button>
+        </div>
+
+        <!-- File Selected Preview -->
+        <div id="file-preview" style="display: none; margin-top: 20px; padding: 16px; background: var(--primary-50); border: 1px solid var(--primary-100); border-radius: var(--radius-sm); align-items: center; justify-content: space-between;">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <span style="font-size: 1.5rem;" id="preview-file-icon">📄</span>
+            <div>
+              <div style="font-weight: 600; font-size: 0.95rem; color: var(--neutral-900);" id="preview-filename">filename.pdf</div>
+              <div style="font-size: 0.8rem; color: var(--neutral-500);" id="preview-filesize">250 KB</div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-ghost btn-sm" id="remove-file-btn">&times;</button>
+        </div>
+
+        <!-- Document Title Input -->
+        <div class="form-group" style="margin-top: 24px;">
+          <label class="form-label" for="resume-title">Resume Label / Title (Optional)</label>
+          <input type="text" class="form-input" id="resume-title" placeholder="e.g. Senior Software Engineer Resume 2026">
+        </div>
+
+        <!-- Progress Bar -->
+        <div id="upload-progress-container" style="display: none; margin-top: 20px;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--neutral-600); margin-bottom: 6px;">
+            <span id="progress-status-text">Uploading...</span>
+            <span id="progress-percent">0%</span>
+          </div>
+          <div class="progress-bar-container">
+            <div class="progress-bar-fill" id="progress-bar-fill"></div>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 24px;" id="upload-submit-btn">
+          Start AI Analysis
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Shared JavaScript -->
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/resumes.js"></script>
+</body>
+</html>

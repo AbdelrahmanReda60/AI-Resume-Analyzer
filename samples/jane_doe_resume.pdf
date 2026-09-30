@@ -1,0 +1,102 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1620 >>
+stream
+BT
+/F1 11 Tf
+14 TL
+50 760 Td
+(Jane Doe) Tj
+T*
+(Senior Software Engineer) Tj
+T*
+(Email: jane.doe@example.com | Phone: +1-555-0199 | San Francisco, CA | linkedin.com/in/janedoe) Tj
+T*
+() Tj
+T*
+(SUMMARY) Tj
+T*
+(Results-oriented Senior Software Engineer with 6 years of experience building) Tj
+T*
+(microservices, REST APIs and scalable backend platforms with Python, FastAPI,) Tj
+T*
+(Docker, PostgreSQL and AWS.) Tj
+T*
+() Tj
+T*
+(TECHNICAL SKILLS) Tj
+T*
+(Python, FastAPI, Flask, Docker, Kubernetes, PostgreSQL, SQL, REST APIs, Git,) Tj
+T*
+(AWS, Linux, JavaScript, HTML, CSS, Redis, Jenkins) Tj
+T*
+() Tj
+T*
+(SOFT SKILLS) Tj
+T*
+(Leadership, Communication, Problem Solving, Teamwork, Agile, Mentoring) Tj
+T*
+() Tj
+T*
+(EXPERIENCE) Tj
+T*
+(TechStream Solutions - Senior Backend Developer 2022 - Present) Tj
+T*
+(- Architected RESTful microservices processing 10M daily transactions.) Tj
+T*
+(- Optimized SQL query performance reducing endpoint latency by 45%.) Tj
+T*
+(- Mentored four junior developers through code review and pairing sessions.) Tj
+T*
+() Tj
+T*
+(DataPulse Inc - Software Developer 2020 - 2022) Tj
+T*
+(- Developed backend features using Python and Flask for a payments platform.) Tj
+T*
+(- Integrated third-party payment gateways and webhook services.) Tj
+T*
+(- Containerized services with Docker and deployed to AWS ECS.) Tj
+T*
+() Tj
+T*
+(EDUCATION) Tj
+T*
+(University of California, Berkeley - B.S. in Computer Science - 2020) Tj
+T*
+() Tj
+T*
+(PROJECTS) Tj
+T*
+(Kubernetes Cost Optimizer - Python, FastAPI, Kubernetes, Prometheus.) Tj
+T*
+(Built a Helm-deployed controller that scales idle pods and cut spend 22%.) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1983
+%%EOF

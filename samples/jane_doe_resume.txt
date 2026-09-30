@@ -1,0 +1,33 @@
+Jane Doe
+Senior Software Engineer
+Email: jane.doe@example.com | Phone: +1-555-0199 | San Francisco, CA | linkedin.com/in/janedoe
+
+SUMMARY
+Results-oriented Senior Software Engineer with 6 years of experience building
+microservices, REST APIs and scalable backend platforms with Python, FastAPI,
+Docker, PostgreSQL and AWS.
+
+TECHNICAL SKILLS
+Python, FastAPI, Flask, Docker, Kubernetes, PostgreSQL, SQL, REST APIs, Git,
+AWS, Linux, JavaScript, HTML, CSS, Redis, Jenkins
+
+SOFT SKILLS
+Leadership, Communication, Problem Solving, Teamwork, Agile, Mentoring
+
+EXPERIENCE
+TechStream Solutions - Senior Backend Developer (2022 - Present)
+- Architected RESTful microservices processing 10M daily transactions.
+- Optimized SQL query performance reducing endpoint latency by 45%.
+- Mentored four junior developers through code review and pairing sessions.
+
+DataPulse Inc - Software Developer (2020 - 2022)
+- Developed backend features using Python and Flask for a payments platform.
+- Integrated third-party payment gateways and webhook services.
+- Containerized services with Docker and deployed to AWS ECS.
+
+EDUCATION
+University of California, Berkeley - B.S. in Computer Science - 2020
+
+PROJECTS
+Kubernetes Cost Optimizer - Python, FastAPI, Kubernetes, Prometheus.
+Built a Helm-deployed controller that scales idle pods and cut spend 22%.

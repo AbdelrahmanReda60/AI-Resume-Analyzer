@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Analysis — AI Resume Analyzer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Global Navbar -->
+  <div id="navbar-container"></div>
+
+  <main>
+    <!-- Header Controls -->
+    <div style="margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+      <div>
+        <h1 style="font-size: 1.85rem; font-weight: 800; color: var(--neutral-900);">AI Resume Analysis</h1>
+        <p style="color: var(--neutral-500); font-size: 0.95rem;">Extracted candidate details, detected skills, and structured history</p>
+      </div>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap;" id="analysis-actions">
+        <!-- Action links rendered dynamically -->
+      </div>
+    </div>
+
+    <!-- Loading State -->
+    <div id="analysis-loading" class="card" style="text-align: center; padding: 60px 20px;">
+      <div style="width: 40px; height: 40px; border: 4px solid var(--neutral-200); border-top-color: var(--primary-600); border-radius: 50%; animation: spin 0.6s linear infinite; margin: 0 auto 16px;"></div>
+      <h3 style="font-size: 1.1rem; color: var(--neutral-800);">Running AI Analysis...</h3>
+      <p style="color: var(--neutral-500); font-size: 0.9rem; margin-top: 4px;">Extracting skills, experience timeline, and generating candidate summary.</p>
+    </div>
+
+    <!-- Analysis Results Content -->
+    <div id="analysis-content" class="grid" style="display: none; gap: 24px;">
+      <!-- Profile & Summary Card -->
+      <div class="card">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 20px;">
+          <div>
+            <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--neutral-900);" id="candidate-name">Candidate Name</h2>
+            <div style="display: flex; gap: 16px; color: var(--neutral-600); font-size: 0.9rem; margin-top: 6px; flex-wrap: wrap;">
+              <span id="candidate-email">📧 email@example.com</span>
+              <span id="candidate-phone">📞 Phone</span>
+              <span id="candidate-location">📍 Location</span>
+            </div>
+          </div>
+          <div style="text-align: right;">
+            <div class="badge badge-info" id="years-exp-badge">0 Years Experience</div>
+          </div>
+        </div>
+
+        <div style="border-top: 1px solid var(--neutral-200); padding-top: 16px;">
+          <h3 class="form-label" style="margin-bottom: 8px; font-size: 0.95rem;">Executive Summary</h3>
+          <p style="color: var(--neutral-700); font-size: 0.95rem; line-height: 1.6;" id="candidate-summary">
+            Candidate summary description...
+          </p>
+        </div>
+      </div>
+
+      <!-- Skills Card -->
+      <div class="card">
+        <h3 class="card-title" style="margin-bottom: 16px;">Detected Skills</h3>
+        
+        <div style="margin-bottom: 20px;">
+          <h4 style="font-size: 0.875rem; font-weight: 700; color: var(--neutral-600); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">Technical Skills</h4>
+          <div class="chips-grid" id="technical-skills-chips">
+            <!-- Chips rendered dynamically -->
+          </div>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.875rem; font-weight: 700; color: var(--neutral-600); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">Soft Skills</h4>
+          <div class="chips-grid" id="soft-skills-chips">
+            <!-- Chips rendered dynamically -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Timeline Card -->
+      <div class="card">
+        <h3 class="card-title" style="margin-bottom: 20px;">Work Experience Timeline</h3>
+        <div id="experience-list" style="display: flex; flex-direction: column; gap: 20px;">
+          <!-- Items rendered dynamically -->
+        </div>
+      </div>
+
+      <!-- Education Card -->
+      <div class="card">
+        <h3 class="card-title" style="margin-bottom: 16px;">Education & Qualifications</h3>
+        <div id="education-list" style="display: flex; flex-direction: column; gap: 12px;">
+          <!-- Items rendered dynamically -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Shared JavaScript -->
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/resumes.js"></script>
+</body>
+</html>

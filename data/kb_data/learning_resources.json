@@ -1,0 +1,56 @@
+{
+  "category": "resource",
+  "description": "Curated resource reference documents for the AI Resume Analyzer knowledge base.",
+  "documents": [
+    {
+      "title": "FastAPI Masterclass Course",
+      "category": "resource",
+      "content": "Course: 'Building Microservices with FastAPI & Python' on Coursera. Covers Pydantic v2, dependency injection, async routes, and automated OpenAPI docs.",
+      "tags": [
+        "course",
+        "fastapi",
+        "python"
+      ]
+    },
+    {
+      "title": "AWS Certified Solutions Architect Guide",
+      "category": "resource",
+      "content": "Certification: 'AWS Certified Solutions Architect – Associate'. Official study guide covering VPC design, IAM security, EC2, S3, and RDS.",
+      "tags": [
+        "certification",
+        "aws",
+        "cloud"
+      ]
+    },
+    {
+      "title": "Kubernetes Deep Dive Course",
+      "category": "resource",
+      "content": "Course: 'Docker & Kubernetes: The Complete Guide' on Udemy. Teaches multi-container deployments, pod management, and cluster networking.",
+      "tags": [
+        "course",
+        "kubernetes",
+        "docker"
+      ]
+    },
+    {
+      "title": "Complete PostgreSQL & Database Design",
+      "category": "resource",
+      "content": "Course: 'Database Systems & SQL Query Optimization'. Teaches index tuning, execution plan analysis, and database schema normal forms.",
+      "tags": [
+        "course",
+        "sql",
+        "postgresql"
+      ]
+    },
+    {
+      "title": "Frontend Performance & Modern CSS Guide",
+      "category": "resource",
+      "content": "Resource: MDN Web Docs Guide on Modern CSS Grid, Flexbox, and Vanilla JS Async/Await patterns.",
+      "tags": [
+        "resource",
+        "css",
+        "javascript"
+      ]
+    }
+  ]
+}

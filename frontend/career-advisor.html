@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Advisor Chat — AI Resume Analyzer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Global Navbar -->
+  <div id="navbar-container"></div>
+
+  <main style="max-width: 960px;">
+    <!-- Header -->
+    <div style="margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+      <div>
+        <h1 style="font-size: 1.85rem; font-weight: 800; color: var(--neutral-900);">AI Career Advisor</h1>
+        <p style="color: var(--neutral-500); font-size: 0.95rem;">Ask career questions, request roadmap advice, or get course recommendations</p>
+      </div>
+
+      <button class="btn btn-secondary btn-sm" id="clear-chat-btn">
+        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+        Clear Chat
+      </button>
+    </div>
+
+    <!-- Active Context Bar -->
+    <div class="card" style="margin-bottom: 16px; padding: 12px 20px;">
+      <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap; font-size: 0.875rem;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="font-weight: 600; color: var(--neutral-700);">Resume Context:</span>
+          <select class="form-select" id="chat-resume-select" style="padding: 0.3rem 0.6rem; font-size: 0.85rem;">
+            <!-- Options rendered dynamically -->
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Chat Window Container -->
+    <div class="chat-container">
+      <div class="chat-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--success-500);"></div>
+          <span style="font-weight: 700; color: var(--neutral-800); font-size: 0.95rem;">Career Advisor Assistant</span>
+        </div>
+        <span style="font-size: 0.8rem; color: var(--neutral-500);">RAG Knowledge Base Connected</span>
+      </div>
+
+      <!-- Scrollable Message Pane -->
+      <div class="chat-messages" id="chat-messages-pane">
+        <!-- Assistant Welcome Message -->
+        <div class="chat-bubble chat-assistant">
+          <strong>Hello! I'm your AI Career Advisor.</strong>
+          <p style="margin-top: 6px;">I can analyze your resume, recommend specific certifications or learning resources, fill missing skill gaps, and answer career guidance questions.</p>
+        </div>
+      </div>
+
+      <!-- Suggested Question Chips Bar -->
+      <div style="padding: 10px 16px; border-top: 1px solid var(--neutral-200); background: var(--neutral-50); display: flex; gap: 8px; overflow-x: auto;" id="suggested-chips-bar">
+        <span class="chip" style="cursor: pointer;" data-query="What missing skills should I focus on learning next?">💡 Missing skills?</span>
+        <span class="chip" style="cursor: pointer;" data-query="Recommend top courses for my target developer role.">📚 Recommended courses?</span>
+        <span class="chip" style="cursor: pointer;" data-query="How can I improve my resume summary statement?">📝 Resume tips?</span>
+      </div>
+
+      <!-- Typing Indicator -->
+      <div id="typing-indicator" style="display: none; padding: 8px 20px;">
+        <div class="typing-indicator">
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+        </div>
+      </div>
+
+      <!-- Input Bar -->
+      <form id="chat-form" class="chat-input-area">
+        <label class="sr-only" for="chat-user-input">Ask the career advisor a question</label>
+        <input type="text" class="form-input" id="chat-user-input" placeholder="Type your career question here..." aria-label="Ask the career advisor a question" required autocomplete="off">
+        <button type="submit" class="btn btn-primary" id="chat-send-btn">
+          Send
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Shared JavaScript -->
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>

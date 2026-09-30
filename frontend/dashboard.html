@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — AI Resume Analyzer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Global Navbar -->
+  <div id="navbar-container"></div>
+
+  <main>
+    <!-- Welcome Header -->
+    <div style="margin-bottom: 32px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+      <div>
+        <h1 style="font-size: 1.85rem; font-weight: 800; color: var(--neutral-900);">Dashboard</h1>
+        <p style="color: var(--neutral-500); font-size: 0.95rem;">Manage your resumes, view AI analyses, and explore job match recommendations</p>
+      </div>
+      <a href="upload-resume.html" class="btn btn-primary">
+        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+        Upload New Resume
+      </a>
+    </div>
+
+    <!-- Overview Stat Cards -->
+    <div class="grid grid-cols-3" style="margin-bottom: 32px;">
+      <div class="card">
+        <div class="card-subtitle">Total Resumes</div>
+        <div style="font-size: 2rem; font-weight: 800; color: var(--primary-600); margin-top: 4px;" id="stat-resumes-count">0</div>
+      </div>
+      <div class="card">
+        <div class="card-subtitle">Analyses Completed</div>
+        <div style="font-size: 2rem; font-weight: 800; color: var(--success-600); margin-top: 4px;" id="stat-analyses-count">0</div>
+      </div>
+      <div class="card">
+        <div class="card-subtitle">Average Match Score</div>
+        <div style="font-size: 2rem; font-weight: 800; color: var(--neutral-800); margin-top: 4px;" id="stat-matches-count">—</div>
+      </div>
+    </div>
+
+    <!-- My Resumes List -->
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">My Resumes</h2>
+        <span class="card-subtitle" id="resumes-subtitle">Uploaded documents</span>
+      </div>
+
+      <div id="resumes-loading" style="text-align: center; padding: 40px;">
+        <div style="width: 32px; height: 32px; border: 3px solid var(--neutral-200); border-top-color: var(--primary-600); border-radius: 50%; animation: spin 0.6s linear infinite; margin: 0 auto 12px;"></div>
+        <p style="color: var(--neutral-500);">Loading your resumes...</p>
+      </div>
+
+      <div id="resumes-error" class="empty-state" style="display: none;" role="alert">
+        <div class="empty-icon">⚠️</div>
+        <h3 class="empty-title" style="font-size: 1.1rem; font-weight: 700; color: var(--neutral-800);">Could not load your resumes</h3>
+        <p class="empty-desc" style="font-size: 0.9rem; margin-top: 4px;">Something went wrong while contacting the server. Please refresh the page to try again.</p>
+      </div>
+
+      <div id="resumes-empty" class="empty-state" style="display: none;">
+        <div class="empty-icon">📄</div>
+        <h3 class="empty-title" style="font-size: 1.1rem; font-weight: 700; color: var(--neutral-800);">No Resumes Uploaded Yet</h3>
+        <p class="empty-desc" style="font-size: 0.9rem; margin-top: 4px;">Upload your first PDF or DOCX resume to get started with AI analysis.</p>
+        <a href="upload-resume.html" class="btn btn-primary" style="margin-top: 16px;">Upload Resume</a>
+      </div>
+
+      <div id="resumes-table-container" style="display: none; overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--neutral-200); color: var(--neutral-500);">
+              <th style="padding: 12px 16px;">Title</th>
+              <th style="padding: 12px 16px;">Format</th>
+              <th style="padding: 12px 16px;">Upload Date</th>
+              <th style="padding: 12px 16px;">Status</th>
+              <th style="padding: 12px 16px; text-align: right;">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="resumes-tbody">
+            <!-- Rows rendered dynamically by resumes.js -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Shared JavaScript -->
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/resumes.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Resume Analyzer — Supercharge Your Career</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Global Navbar -->
+  <div id="navbar-container"></div>
+
+  <!-- Hero Section -->
+  <main>
+    <section style="text-align: center; padding: 48px 16px 64px; max-width: 800px; margin: 0 auto;">
+      <span class="badge badge-info" style="margin-bottom: 16px;">AI-Powered Career Intelligence</span>
+      <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.2; color: var(--neutral-900); margin-bottom: 20px;">
+        Optimize Your Resume. Land Your Dream Job.
+      </h1>
+      <p style="font-size: 1.15rem; color: var(--neutral-600); margin-bottom: 32px; line-height: 1.6;">
+        Upload your resume for instant AI analysis, automated skill detection, personalized job matching scores, and tailored career roadmap advice.
+      </p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="upload-resume.html" class="btn btn-primary btn-lg">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+          Upload Resume Now
+        </a>
+        <a href="jobs.html" class="btn btn-secondary btn-lg">Browse Available Jobs</a>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section style="margin-bottom: 64px;">
+      <div style="text-align: center; margin-bottom: 40px;">
+        <h2 style="font-size: 1.75rem; font-weight: 700; color: var(--neutral-900);">How It Works</h2>
+        <p style="color: var(--neutral-500);">Three simple steps to unlock your full career potential</p>
+      </div>
+      <div class="grid grid-cols-3">
+        <div class="card" style="text-align: center; padding: 32px 24px;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--primary-50); color: var(--primary-600); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.25rem; margin: 0 auto 16px;">1</div>
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 8px;">Upload Resume</h3>
+          <p style="font-size: 0.9rem; color: var(--neutral-600);">Upload your PDF or DOCX resume. Our parser securely extracts your experience and skills.</p>
+        </div>
+        <div class="card" style="text-align: center; padding: 32px 24px;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--primary-50); color: var(--primary-600); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.25rem; margin: 0 auto 16px;">2</div>
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 8px;">AI Analysis & Match</h3>
+          <p style="font-size: 0.9rem; color: var(--neutral-600);">AI agents detect core technical skills, evaluate job fit, and score your match percentage.</p>
+        </div>
+        <div class="card" style="text-align: center; padding: 32px 24px;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--primary-50); color: var(--primary-600); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.25rem; margin: 0 auto 16px;">3</div>
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 8px;">Career Coaching</h3>
+          <p style="font-size: 0.9rem; color: var(--neutral-600);">Receive missing skill recommendations, learning resource links, and interactive career coaching.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features Grid -->
+    <section>
+      <div style="text-align: center; margin-bottom: 40px;">
+        <h2 style="font-size: 1.75rem; font-weight: 700; color: var(--neutral-900);">Powerful Features</h2>
+      </div>
+      <div class="grid grid-cols-3">
+        <div class="card card-hover">
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: var(--primary-600);">Resume Analyzer Agent</h3>
+          <p style="font-size: 0.9rem; color: var(--neutral-600);">Automated extraction of technical skills, soft skills, education credentials, and career summaries into validated structures.</p>
+        </div>
+        <div class="card card-hover">
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: var(--primary-600);">Job Matching Engine</h3>
+          <p style="font-size: 0.9rem; color: var(--neutral-600);">Multi-factor scoring algorithm calculating skill coverage, experience duration, education fit, and semantic similarity.</p>
+        </div>
+        <div class="card card-hover">
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: var(--primary-600);">RAG Career Advisor</h3>
+          <p style="font-size: 0.9rem; color: var(--neutral-600);">Interactive AI chat backed by a retrieval-augmented knowledge base of roadmaps, certifications, and course recommendations.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Shared JavaScript -->
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>

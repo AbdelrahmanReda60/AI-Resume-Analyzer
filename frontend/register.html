@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register — AI Resume Analyzer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Global Navbar -->
+  <div id="navbar-container"></div>
+
+  <!-- Main Auth Card -->
+  <main>
+    <div class="auth-wrapper">
+      <div class="card">
+        <div class="auth-header">
+          <h1>Create Account</h1>
+          <p>Join AI Resume Analyzer to accelerate your job search</p>
+        </div>
+
+        <form id="register-form" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="register-name">Full Name</label>
+            <input type="text" class="form-input" id="register-name" name="full_name" placeholder="e.g. Jane Doe" required>
+            <span class="form-error" id="name-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="register-email">Email Address</label>
+            <input type="email" class="form-input" id="register-email" name="email" placeholder="name@example.com" required>
+            <span class="form-error" id="email-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="register-password">Password</label>
+            <div class="form-input-wrapper">
+              <input type="password" class="form-input" id="register-password" name="password" placeholder="At least 8 characters" minlength="8" required>
+              <button type="button" class="password-toggle-btn" onclick="togglePasswordVisibility('register-password', this)" aria-label="Toggle password visibility">
+                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+              </button>
+            </div>
+            <span class="form-help">Must be at least 8 characters long</span>
+            <span class="form-error" id="password-error"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 8px;" id="register-submit-btn">
+            Create Account
+          </button>
+        </form>
+
+        <div class="auth-footer-link">
+          Already have an account? <a href="login.html">Sign in here</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Shared JavaScript -->
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
